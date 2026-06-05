@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <!-- Navbar -->
     <nav class="navbar">
@@ -29,13 +31,73 @@
         </div>
     </header>
 
+    <!-- Events -->
+    <section class="events">
+        <div class="title">
+            <h1>Upcoming Events</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="images/img1.png" alt="">
+                <h4>Everest Camp Trek</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo consectetur ullam quidem debitis
+                    similique vel, est cupiditate molestias deleniti at velit impedit tempora mollitia.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="images/img2.png" alt="">
+                <h4>Walking Holidays</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo consectetur ullam quidem debitis
+                    similique vel, est cupiditate molestias deleniti at velit impedit tempora mollitia.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="explore">
+        <div class="explore-content">
+            <h1>EXPLORE THE WORLD</h1>
+            <div class="line"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt tempora, a saepe, libero ad,
+                voluptatum nihil exercitationem nisi mollitia ipsa unde tenetur ex. Iste unde sit dolores ipsam, autem
+                nam!</p>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </section>
+
+    <section class="tours">
+        <div class="row">
+            <div class="col content-col">
+                <h1>UPCOMING TOURS & DESTINATION</h1>
+                <div class="line"></div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus repellat nisi assumenda. Iure, maiores at repellat rem possimus recusandae, quia molestiae aliquam praesentium earum quam hic.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="/images/img3.png" alt="">
+                    <img src="/images/img4.png" alt="">
+                    <img src="/images/img5.png" alt="">
+                    <img src="/images/img6.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p>123 Fifth Avenue, My 10160, New York, USA | Phone: 800-123-456 | Email: contact@exampl.com</p>
+        <p>Copyright c 2020 Outdoor Adventure</p>
+    </section>
+
     <script>
         const menuBtn = document.querySelector('.menu-btn')
         const navlinks = document.querySelector('.nav-links')
 
-        menuBtn.addEventListener('click',()=>{
+        menuBtn.addEventListener('click', () => {
             navlinks.classList.toggle('mobile-menu')
         })
     </script>
 </body>
+
 </html>
