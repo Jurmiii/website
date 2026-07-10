@@ -213,7 +213,9 @@ img {
 }
 
 /* Active link */
-
+.active-link{
+    color: var(--first-color);
+}
 
 /*=============== HOME SECTION ===============*/
 .home__container{
@@ -501,34 +503,479 @@ img {
 }
 
 /*=============== EVENTS SECTION ===============*/
+.events__container{
+    position: relative;
+    row-gap: 0;
+    padding-bottom: 2rem;
+}
 
+.events__flour{
+    width: 2px;
+    position: absolute;
+    top: 0;
+    left: -3rem;
+}
+
+.events__img{
+    position: relative;
+}
+
+.events__data{
+    position: relative;
+    background-color: var(--white-color);
+    color: var(--dark-color);
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.events__desription{
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+.events__info{
+    margin-bottom: 3rem;
+}
+
+.events__name{
+    font-size: var(--normal-font-size);
+    margin-bottom: 0.5rem;
+}
+
+.events__details{
+    color: var(--text-color);
+}
+
+.events__spoon{
+    width: 150px;
+    position: absolute;
+    right: -1.5rem;
+    bottom: -1rem;
+}
 
 /*=============== INGREDIENTS SECTION ===============*/
+.ingredients__container{
+    row-gap: 5.5rem;
+}
 
+.ingredients__description{
+    text-align: center;
+}
+
+.ingredients__images{
+    position: relative;
+    justify-self: center;
+}
+
+.ingredients__images img{
+    position: absolute;
+}
+
+.ingredients__images .ingredients__img-1{
+    position: relative;
+    width: 110px;
+}
+
+.ingredients__img-2{
+    width: 45px;
+    left: -3.5rem;
+    bottom: 0;
+}
+
+.ingredients__img-3{
+    width: 38px;
+    right: -3rem;
+    bottom: 0;
+}
+
+.ingredients__img-4{
+    width: 32px;
+    left: -6rem;
+    top: 2.5rem;
+}
+
+.ingredients__img-5{
+    width: 55px;
+    left: -6.5rem;
+    bottom: 0;
+}
+
+.ingredients__img-6{
+    width: 45px;
+    right: -3.5rem;
+    top: 0.5rem;
+}
+
+.ingredients__img-7{
+    width: 45px;
+    right: -6.5rem;
+    top: 3.5rem;
+}
+
+.ingredients__img-8{
+    width: 60px;
+    right: -7.5rem;
+    bottom: 0;
+}
 
 /*=============== CONTACT SECTION ===============*/
+.contact__container{
+    row-gap: 4rem;
+}
 
+.contact__map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.contact__map{
+    height: 300px;
+    justify-self: center;
+}
+
+.contact__content{
+    display: grid;
+    row-gap: 1.5rem;
+}
+
+.contact__info{
+    text-align: center;
+}
+
+.contact__icon{
+    display: inline-block;
+    font-size: 2rem;
+    color: var(--first-color);
+    margin-bottom: 0.5rem;
+}
+
+.contact__title{
+    font-size: var(--h2-font-size);
+    color: var(--first-color);
+    margin-bottom: 1rem;
+}
+
+.contact__social{
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+}
+
+.contact__link{
+    display: block;
+    color: var(--white-color);
+}
+
+.contact__link:hover{
+    scale: 1.1;
+}
+
+.contact__address a{
+    display: block;
+    color: var(--white-color);
+    font-style: normal;
+}
 
 /*=============== RESERVATION SECTION ===============*/
+.reservation__container{
+    position: relative;
+    height: 420px;
+    place-items: center;
+}
 
+.reservation__bg,
+.reservation__shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.reservation__bg{
+    object-fit: cover;
+    object-position: center;
+}
+
+.reservation__shadow{
+    background-color: hsla(0, 0%, 0%, 0.4);
+    z-index: 5;
+}
+
+.reservation__content{
+    position: relative;
+    z-index: 10;
+}
+
+.reservation__data{
+    margin-bottom: 3rem;
+}
+
+.reservation__data .section__subtitle{
+    color: var(--white-color);
+}
 
 /*=============== FOOTER ===============*/
+.footer{
+    padding-block: 5rem 2rem;
+}
+
+.footer__container{
+    row-gap: 3rem;
+}
+
+.footer__title{
+    font-size: var(--normal-font-size);
+    color: var(--first-color);
+    margin-bottom: 0.5rem;
+}
+
+.footer__links{
+    display: flex;
+    column-gap: 1rem;
+}
+
+.footer__link{
+    color: var(--white-color);
+    transition: color 0.4s;
+}
+
+.footer__link:hover{
+    color: var(--first-color);
+}
+
+.footer__address{
+    font-style: normal;
+}
+
+.footer__address span{
+    display: block;
+}
+
+.footer__logo{
+    display: inline-block;
+    color: var(--first-color);
+    font: var(--font-bold) var(--h1-font-size) var(--second-font);
+    margin-bottom: 0.5rem;
+}
+
+.footer__email{
+    display: block;
+}
+
+.footer__copy{
+    display: block;
+    text-align: center;
+    margin-top: 6rem;
+    font-size: var(--smaller-font-size);
+}
 
 
 /*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar{
+    width: 0.6rem;
+    background-color: hsl(0, 0%, 15%);
+}
 
+::-webkit-scrollbar-thumb{
+    background-color: hsl(0, 0%, 25%);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: hsl(0, 0%, 35%);
+}
 
 /*=============== SCROLL UP ===============*/
+.scrollup{
+    position: fixed;
+    right: 1rem;
+    bottom: -50%;
+    background-color: var(--body-color);
+    box-shadow: 0 4px 16px hsla(0, 0%, 0%, 0.3);
+    color: var(--white-color);
+    display: inline-flex;
+    padding: 6px;
+    font-size: 1.25rem;
+    z-index: var(--z-tooltip);
+    transition: bottom 0.4s, transform 0.4s;
+}
 
+.scrollup:hover{
+    transform: translateY(-0.5rem);
+}
 
 /* Show Scroll Up */
-
+.show-scroll{
+    bottom: 3rem;
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For medium devices <> */
+@media (width >= 540px){
+    .about__container{
+        width: 350px;
+        margin-inline: auto;
+    }
 
+    .menu__container,
+    .ingredients__container,
+    .contact__container{
+        grid-template-columns: 400px;
+        justify-content: center;
+    }
+}
+
+@media (width >= 768px){
+    .contact__content,
+    .footer__container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 /* For large devices <> */
+@media (width >= 1150px){
+    .container{
+        margin-inline: auto;
+    }
 
+    .section{
+        padding-block: 7rem 2rem;
+    }
+
+    .section__title{
+        margin-bottom: 1.5rem;
+    }
+
+    .nav{
+        height: calc(var(--header-height) + 2rem);
+    }
+    
+    .nav__toggle,
+    .nav__close{
+        display: none;
+    }
+
+    .nav__list{
+        flex-direction: row;
+        column-gap: 3rem;
+    }
+
+    .home__container{
+        grid-template-columns: 460px 560px;
+        column-gap: 4rem;
+        align-items: center;
+        justify-content: center;
+        padding-block: 7rem 4rem;
+    }
+
+    .home__data{
+        text-align: initial;
+    }
+
+    .home__title{
+        margin-bottom: 3rem;
+    }
+
+    .home__images .home__fryingpan{
+        width: 560px;
+    }
+
+    .home__rosemary-2{
+        width: 200px;
+        right: -3rem;
+        bottom: 8rem;
+    }
+
+    .home__spoon{
+        width: 160px;
+        top: 2rem;
+        right: -4rem;
+    }
+
+    .home__onion{
+        width: 120px;
+        top: 0;
+        left: -2rem;
+    }
+
+    .home__rosemary-1{
+        width: 120px;
+        left: -4px;
+        bottom: 5px;
+    }
+
+    .home__tomato{
+        width: 120px;
+        left: 1rem;
+        bottom: 2rem;
+    }
+
+    .home__pepper{
+        width: 200px;
+        right: 12rem;
+        bottom: 2rem;
+    }
+
+    .home__salt-1{
+        width: 300px;
+        top: -3rem;
+        right: 2rem;
+    }
+
+    .home__salt-2{
+        width: 300px;
+        left: -6rem;
+        bottom: 7rem;
+    }
+
+    .about__container{
+        width: initial;
+        grid-template-columns: 450px 670px;
+        column-gap: 0;
+        margin-block: 5rem 4rem;
+    }
+
+    .about__flour{
+        width: 450px;
+        left: 5.5rem;
+        top: -7rem;
+    }
+
+    .about__data{
+        padding: 0 6rem;
+        text-align: initial;
+        align-content: center;
+    }
+
+    .about__data :is(.section__subtitle, .section__title){
+        text-align: initial;
+    }
+
+    .about__rosemary{
+        width: 220px;
+        right: -4rem;
+        bottom: -4rem;
+    }
+
+    .menu__container{
+        row-gap: 6.4rem;
+        grid-template-columns: 850px;
+    }
+
+    .menu__header{
+        display: grid;
+        grid-template-columns: max-content 500px;
+        column-gap: 9rem;
+        align-items: center;
+    }
+
+    .menu__header .section__subtitle{
+        text-align: right;
+    }
+
+    .manu__description{
+        text-align: initial;
+    }
+}
 
 /* For 2K resolutions <> */
